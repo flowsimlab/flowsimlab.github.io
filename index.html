@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">flowsimlab<span class="accent">.</span></a>
+      <ul class="nav__links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">
+        <span class="dot"></span> Available for work
+      </p>
+      <h1 class="hero__title">
+        I design beautiful,<br />
+        <span class="gradient-text">intuitive experiences.</span>
+      </h1>
+      <p class="hero__sub">
+        UI/UX designer with a passion for thoughtful design.
+        I create digital products that are delightful to use
+        and easy to understand.
+      </p>
+      <div class="hero__actions">
+        <a href="#work" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FEATURED PROJECT -->
+  <section class="featured" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">Featured Work</p>
+      <h2 class="section-title reveal">Recent projects</h2>
+
+      <div class="featured-card reveal">
+        <div class="featured-card__badge">⭐ Featured</div>
+        <div class="featured-card__content">
+          <div class="featured-card__info">
+            <div class="featured-card__meta">
+              <span class="tag tag--ai">Web</span>
+              <span class="tag tag--prod">Productivity</span>
+            </div>
+            <h3 class="featured-card__title">TodoByAI</h3>
+            <p class="featured-card__desc">
+              Redesigned UI for a task planning platform, focusing on
+              clarity and user delight. The interface guides users through
+              goal-setting with a clean, minimal design.
+            </p>
+
+            <ul class="feature-list">
+              <li>
+                <span class="feature-list__icon">✦</span>
+                Clean, intuitive interface with thoughtful interactions
+              </li>
+              <li>
+                <span class="feature-list__icon">✦</span>
+                Responsive design across all devices
+              </li>
+              <li>
+                <span class="feature-list__icon">✦</span>
+                Accessibility-first approach for inclusive design
+              </li>
+              <li>
+                <span class="feature-list__icon">✦</span>
+                Smooth animations and delightful micro-interactions
+              </li>
+            </ul>
+
+            <div class="featured-card__actions">
+              <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--glow">
+                View Live ↗
+              </a>
+              <div class="featured-card__contact">
+                <span>Design inquiries?</span>
+                <a href="mailto:flowsimlab@gmail.com">flowsimlab@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card__visual">
+            <div class="mockup" style="margin-right: 2rem;">
+              <div class="mockup__bar">
+                <span class="mockup__dot red"></span>
+                <span class="mockup__dot yellow"></span>
+                <span class="mockup__dot green"></span>
+                <span class="mockup__url">todobyai.com</span>
+              </div>
+              <div class="mockup__screen">
+                <div class="app-preview">
+                  <p class="app-preview__label">What do you want to accomplish?</p>
+                  <div class="app-preview__input">
+                    <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+                  </div>
+                  <div class="app-preview__tasks" id="preview-tasks"></div>
+                </div>
+              </div>
+            </div>
+            <div class="app-demo">
+              <div class="app-demo__header">
+                <span class="app-demo__logo">TodoByAI</span>
+                <span class="app-demo__nav">Use Cases</span>
+              </div>
+              <div class="app-demo__body">
+                <div class="app-demo__prompt">
+                  <div class="app-demo__prompt-label">Goal</div>
+                  <div class="app-demo__prompt-text">"Launch my SaaS product in 30 days"</div>
+                </div>
+                <div class="app-demo__divider">
+                  <span class="app-demo__arrow">↓ AI generated tasks</span>
+                </div>
+                <div class="app-demo__tasks">
+                  <div class="demo-task demo-task--done">
+                    <span class="demo-task__check">✓</span>
+                    <span>Define your target audience</span>
+                  </div>
+                  <div class="demo-task demo-task--done">
+                    <span class="demo-task__check">✓</span>
+                    <span>Build an MVP with core features</span>
+                  </div>
+                  <div class="demo-task demo-task--active">
+                    <span class="demo-task__check demo-task__check--active"></span>
+                    <span>Set up a landing page</span>
+                  </div>
+                  <div class="demo-task">
+                    <span class="demo-task__check demo-task__check--empty"></span>
+                    <span>Launch on Product Hunt</span>
+                  </div>
+                  <div class="demo-task">
+                    <span class="demo-task__check demo-task__check--empty"></span>
+                    <span>Reach out to first 10 users</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More projects grid -->
+      <p class="section-eyebrow reveal">Thinking of your next big thing?</p>
+      <h2 class="section-title reveal">Ideas to build</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">📊</span>
+            <div class="project-card__links">
+              <a href="#" title="GitHub" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time metrics dashboard with AI-generated insights and anomaly detection.</p>
+          <div class="project-card__tags">
+            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">AI</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">💬</span>
+            <div class="project-card__links">
+              <a href="#" title="View" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>AI Chat Assistant</h3>
+          <p>Embeddable customer support chatbot trained on your own docs and knowledge base.</p>
+          <div class="project-card__tags">
+            <span class="tag">OpenAI</span><span class="tag">Next.js</span><span class="tag">RAG</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">🔔</span>
+            <div class="project-card__links">
+              <a href="#" title="View" class="project-link">↗</a>
+            </div>
+          </div>
+          <h3>Smart Notification Engine</h3>
+          <p>Multi-channel notification system with intelligent batching and user preference learning.</p>
+          <div class="project-card__tags">
+            <span class="tag">Python</span><span class="tag">Redis</span><span class="tag">ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">Tech Stack</p>
+      <h2 class="section-title reveal">Design tools I love.</h2>
+      <div class="skills-grid reveal">
+        <div class="skill-group">
+          <h4 class="skill-group__title">Frontend</h4>
+          <div class="skill-chips">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Framer Motion</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group__title">Backend</h4>
+          <div class="skill-chips">
+            <span class="chip">Node.js</span>
+            <span class="chip">Python</span>
+            <span class="chip">FastAPI</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">Redis</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group__title">AI / ML</h4>
+          <div class="skill-chips">
+            <span class="chip">OpenAI API</span>
+            <span class="chip">LangChain</span>
+            <span class="chip">Embeddings</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Fine-tuning</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="skill-group__title">Infra &amp; Tools</h4>
+          <div class="skill-chips">
+            <span class="chip">Vercel</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">GitHub Actions</span>
+            <span class="chip">Supabase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__inner reveal">
+        <p class="section-eyebrow">Let's talk</p>
+        <h2 class="section-title">Got a project in mind?<br /><span class="gradient-text">Let's build it.</span></h2>
+        <p class="contact__sub">
+          Looking for a designer? I'd love to hear about your
+          next project. Let's create something great together.
+        </p>
+        <div class="contact__options">
+          <a href="mailto:flowsimlab@gmail.com" class="contact-card">
+            <span class="contact-card__icon">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <span>flowsimlab@gmail.com</span>
+            </div>
+            <span class="contact-card__arrow">→</span>
+          </a>
+          <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--highlight">
+            <span class="contact-card__icon">🤖</span>
+            <div>
+              <strong>Try TodoByAI</strong>
+              <span>todobyai.com</span>
+            </div>
+            <span class="contact-card__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="nav__logo">flowsimlab<span class="accent">.</span></span>
+        <p class="footer__copy">© 2026 — Designed with care & attention to detail.</p>
+        <div class="footer__links">
+          <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer">TodoByAI</a>
+          <a href="mailto:flowsimlab@gmail.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
