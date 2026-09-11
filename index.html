@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — UI/UX Designer</title>
+  <title>flowsimlab — Products &amp; Design</title>
+  <link rel="icon" type="image/png" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,7 +15,7 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">flowsimlab<span class="accent">.</span></a>
+      <a href="#" class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></a>
       <ul class="nav__links">
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
@@ -163,49 +164,72 @@
       </div>
 
       <!-- More projects grid -->
-      <p class="section-eyebrow reveal">Thinking of your next big thing?</p>
-      <h2 class="section-title reveal">Ideas to build</h2>
+      <p class="section-eyebrow reveal">Built &amp; shipping</p>
+      <h2 class="section-title reveal">More projects</h2>
       <div class="projects-grid">
-        <div class="project-card reveal">
+
+        <a href="https://satquestionmastery.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
           <div class="project-card__header">
-            <span class="project-card__icon">📊</span>
-            <div class="project-card__links">
-              <a href="#" title="GitHub" class="project-link">↗</a>
-            </div>
+            <span class="project-card__icon">🎯</span>
+            <span class="project-link">↗</span>
           </div>
-          <h3>Analytics Dashboard</h3>
-          <p>Real-time metrics dashboard with AI-generated insights and anomaly detection.</p>
+          <h3>SATquestionmastery</h3>
+          <p>A parent &amp; tutor dashboard for SAT prep — 200+ questions organized by College Board domain, progress tracking, weak-area detection, and custom quizzes with explanations.</p>
           <div class="project-card__tags">
-            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">AI</span>
+            <span class="tag">Education</span><span class="tag">SAT Prep</span><span class="tag">Dashboard</span>
+          </div>
+        </a>
+
+        <a href="https://learninguni.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">🎓</span>
+            <span class="project-link">↗</span>
+          </div>
+          <h3>LearningUni</h3>
+          <p>An AI-powered platform that generates custom questions, quizzes, and structured learning paths — build teaching materials 10x faster for teachers, parents, and self-learners.</p>
+          <div class="project-card__tags">
+            <span class="tag">AI</span><span class="tag">EdTech</span><span class="tag">Quiz Builder</span>
+          </div>
+        </a>
+
+        <a href="https://myowntimeline.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">🗓️</span>
+            <span class="project-link">↗</span>
+          </div>
+          <h3>MyOwnTimeline</h3>
+          <p>A log, not a to-do list. Capture your day as it happens and get an automatic timeline, daily reports, streaks, a focus timer, and AI coaching — synced across devices.</p>
+          <div class="project-card__tags">
+            <span class="tag">Productivity</span><span class="tag">Journaling</span><span class="tag">AI</span>
+          </div>
+        </a>
+
+        <a href="https://memorybibleverse.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">📖</span>
+            <span class="project-link">↗</span>
+          </div>
+          <h3>MemoryVerse</h3>
+          <p>A Scripture-memorization game. Rebuild verses from shuffled pieces across three difficulty levels, filter by theme, switch Bible versions, and play fully offline.</p>
+          <div class="project-card__tags">
+            <span class="tag">Faith</span><span class="tag">Learning</span><span class="tag">Game</span>
+          </div>
+        </a>
+
+        <div class="project-card project-card--soon reveal">
+          <div class="project-card__header">
+            <span class="project-card__icon">✨</span>
+            <span class="project-link project-link--soon">soon</span>
+          </div>
+          <h3>hai</h3>
+          <p>Something new in the works. Details coming soon — check back shortly.</p>
+          <div class="project-card__tags">
+            <span class="tag">Coming Soon</span>
           </div>
         </div>
-        <div class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">💬</span>
-            <div class="project-card__links">
-              <a href="#" title="View" class="project-link">↗</a>
-            </div>
-          </div>
-          <h3>AI Chat Assistant</h3>
-          <p>Embeddable customer support chatbot trained on your own docs and knowledge base.</p>
-          <div class="project-card__tags">
-            <span class="tag">OpenAI</span><span class="tag">Next.js</span><span class="tag">RAG</span>
-          </div>
-        </div>
-        <div class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">🔔</span>
-            <div class="project-card__links">
-              <a href="#" title="View" class="project-link">↗</a>
-            </div>
-          </div>
-          <h3>Smart Notification Engine</h3>
-          <p>Multi-channel notification system with intelligent batching and user preference learning.</p>
-          <div class="project-card__tags">
-            <span class="tag">Python</span><span class="tag">Redis</span><span class="tag">ML</span>
-          </div>
-        </div>
+
       </div>
+
     </div>
   </section>
 
@@ -295,7 +319,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <span class="nav__logo">flowsimlab<span class="accent">.</span></span>
+        <span class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></span>
         <p class="footer__copy">© 2026 — Designed with care & attention to detail.</p>
         <div class="footer__links">
           <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer">TodoByAI</a>
