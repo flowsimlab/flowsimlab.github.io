@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>flowsimlab — SaaS Products</title>
+  <title>flowsimlab — AI-powered SaaS products for every need</title>
+  <meta name="description" content="One studio powering a family of flexible SaaS products for teachers, students, builders, and self-learners." />
   <link rel="icon" type="image/png" href="logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +16,36 @@
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></a>
+      <a href="#home" class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></a>
+
       <ul class="nav__links">
+        <li class="nav__item nav__item--dropdown">
+          <button class="nav__dropdown-toggle" aria-haspopup="true" aria-expanded="false">Products <span class="nav__caret">▾</span></button>
+          <div class="nav__dropdown" role="menu">
+            <a href="#todobyai" class="nav__dropdown-link" role="menuitem">
+              <span class="nav__dropdown-icon">🤖</span>
+              <span><strong>TodoByAI</strong><small>Turn any goal into an AI task plan</small></span>
+            </a>
+            <a href="#learninguni" class="nav__dropdown-link" role="menuitem">
+              <span class="nav__dropdown-icon">🎓</span>
+              <span><strong>LearningUni</strong><small>Generate custom questions &amp; quizzes</small></span>
+            </a>
+            <a href="#timeline" class="nav__dropdown-link" role="menuitem">
+              <span class="nav__dropdown-icon">🗓️</span>
+              <span><strong>MyOwnTimeline</strong><small>Log your day, get an auto timeline</small></span>
+            </a>
+            <div class="nav__dropdown-divider"></div>
+            <a href="#work" class="nav__dropdown-link nav__dropdown-link--all" role="menuitem">
+              <span class="nav__dropdown-icon">✨</span>
+              <span><strong>All products</strong><small>See the full family</small></span>
+            </a>
+          </div>
+        </li>
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+
+      <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get started</button>
     </div>
   </nav>
 
@@ -32,218 +56,266 @@
       <div class="hero__blob hero__blob--2"></div>
       <div class="hero__grid"></div>
     </div>
+
     <div class="hero__content">
+      <div class="hero__eyebrow"><span class="dot"></span> Independent products · shared standards</div>
       <h1 class="hero__title">
-        Building beautiful,<br />
-        <span class="gradient-text">intuitive SaaS products.</span>
+        AI-powered products for<br />
+        <span class="gradient-text">every kind of need.</span>
       </h1>
       <p class="hero__sub">
-        A parent company for a family of SaaS apps —
-        independent products, shared standards,
-        powered by flowsimlab studio.
+        One studio powering a family of flexible SaaS apps — for teachers,
+        students, builders, and self-learners. Beautiful, intuitive, and
+        built to the same high standard.
       </p>
       <div class="hero__actions">
-        <a href="#work" class="btn btn--primary">View Work</a>
-        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+        <a href="#work" class="btn btn--primary">Explore products</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num">7<span class="stat__unit">+</span></span><span class="stat__label">Products shipped</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num">1<span class="stat__unit">studio</span></span><span class="stat__label">Shared standards</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num">100<span class="stat__unit">%</span></span><span class="stat__label">Privacy-first</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="mockup">
+        <div class="mockup__bar">
+          <span class="mockup__dot red"></span>
+          <span class="mockup__dot yellow"></span>
+          <span class="mockup__dot green"></span>
+          <span class="mockup__url">todobyai.com</span>
+        </div>
+        <div class="mockup__screen">
+          <div class="app-preview">
+            <p class="app-preview__label">What do you want to accomplish?</p>
+            <div class="app-preview__input">
+              <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+            </div>
+            <div class="app-preview__tasks" id="preview-tasks"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-  <!-- FEATURED PROJECT -->
-  <section class="featured" id="projects">
+  <!-- PRODUCTS INTRO -->
+  <section class="products-intro" id="work">
     <div class="container">
-      <p class="section-eyebrow reveal">Flagship</p>
-      <h2 class="section-title reveal">Featured venture</h2>
+      <p class="section-eyebrow reveal">The family</p>
+      <h2 class="section-title reveal">Three flagship products,<br /><span class="gradient-text">one shared engine.</span></h2>
+      <p class="products-intro__sub reveal">Each app is independent and focused — but they're all built on the same foundation of clean design, privacy, and thoughtful AI.</p>
+    </div>
+  </section>
 
-      <div class="featured-card reveal">
-        <div class="featured-card__badge">⭐ Featured</div>
-        <div class="featured-card__content">
-          <div class="featured-card__info">
-            <div class="featured-card__meta">
-              <span class="tag tag--ai">Web</span>
-              <span class="tag tag--prod">Productivity</span>
-            </div>
-            <h3 class="featured-card__title">TodoByAI</h3>
-            <p class="featured-card__desc">
-              Redesigned UI for a task planning platform, focusing on
-              clarity and user delight. The interface guides users through
-              goal-setting with a clean, minimal design.
-            </p>
-
-            <ul class="feature-list">
-              <li>
-                <span class="feature-list__icon">✦</span>
-                Clean, intuitive interface with thoughtful interactions
-              </li>
-              <li>
-                <span class="feature-list__icon">✦</span>
-                Responsive design across all devices
-              </li>
-              <li>
-                <span class="feature-list__icon">✦</span>
-                Accessibility-first approach for inclusive design
-              </li>
-              <li>
-                <span class="feature-list__icon">✦</span>
-                Smooth animations and delightful micro-interactions
-              </li>
-            </ul>
-
-            <div class="featured-card__actions">
-              <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--glow">
-                View Live ↗
-              </a>
-              <div class="featured-card__contact">
-                <span>Product inquiries?</span>
-                <a href="mailto:flowsimlab@gmail.com">flowsimlab@gmail.com</a>
-              </div>
-            </div>
+  <!-- FEATURE SECTION 1 — TodoByAI -->
+  <section class="feature" id="todobyai">
+    <div class="container feature__inner">
+      <div class="feature__text reveal">
+        <span class="feature__badge feature__badge--purple">🤖 TodoByAI</span>
+        <h3 class="feature__title">Turn any goal into a clear, AI-generated plan.</h3>
+        <p class="feature__desc">Describe what you want to accomplish and TodoByAI breaks it down into an ordered, achievable set of tasks — with clarity and delight built into every interaction.</p>
+        <div class="feature__triad">
+          <div class="triad-item">
+            <span class="triad-item__icon">✍️</span>
+            <strong>Describe</strong>
+            <span>State a goal in plain language, any domain.</span>
           </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">✨</span>
+            <strong>Generate</strong>
+            <span>Get an ordered task plan in seconds.</span>
+          </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">✅</span>
+            <strong>Execute</strong>
+            <span>Track progress with delightful check-offs.</span>
+          </div>
+        </div>
+        <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--glow">Try TodoByAI ↗</a>
+      </div>
 
-          <div class="featured-card__visual">
-            <div class="mockup" style="margin-right: 2rem;">
-              <div class="mockup__bar">
-                <span class="mockup__dot red"></span>
-                <span class="mockup__dot yellow"></span>
-                <span class="mockup__dot green"></span>
-                <span class="mockup__url">todobyai.com</span>
-              </div>
-              <div class="mockup__screen">
-                <div class="app-preview">
-                  <p class="app-preview__label">What do you want to accomplish?</p>
-                  <div class="app-preview__input">
-                    <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
-                  </div>
-                  <div class="app-preview__tasks" id="preview-tasks"></div>
-                </div>
-              </div>
+      <div class="feature__visual reveal">
+        <div class="app-demo">
+          <div class="app-demo__header">
+            <span class="app-demo__logo">TodoByAI</span>
+            <span class="app-demo__nav">Use Cases</span>
+          </div>
+          <div class="app-demo__body">
+            <div class="app-demo__prompt">
+              <div class="app-demo__prompt-label">Goal</div>
+              <div class="app-demo__prompt-text">"Launch a SaaS product in 30 days"</div>
             </div>
-            <div class="app-demo">
-              <div class="app-demo__header">
-                <span class="app-demo__logo">TodoByAI</span>
-                <span class="app-demo__nav">Use Cases</span>
-              </div>
-              <div class="app-demo__body">
-                <div class="app-demo__prompt">
-                  <div class="app-demo__prompt-label">Goal</div>
-                  <div class="app-demo__prompt-text">"Launch a SaaS product in 30 days"</div>
-                </div>
-                <div class="app-demo__divider">
-                  <span class="app-demo__arrow">↓ AI generated tasks</span>
-                </div>
-                <div class="app-demo__tasks">
-                  <div class="demo-task demo-task--done">
-                    <span class="demo-task__check">✓</span>
-                    <span>Define your target audience</span>
-                  </div>
-                  <div class="demo-task demo-task--done">
-                    <span class="demo-task__check">✓</span>
-                    <span>Build an MVP with core features</span>
-                  </div>
-                  <div class="demo-task demo-task--active">
-                    <span class="demo-task__check demo-task__check--active"></span>
-                    <span>Set up a landing page</span>
-                  </div>
-                  <div class="demo-task">
-                    <span class="demo-task__check demo-task__check--empty"></span>
-                    <span>Launch on Product Hunt</span>
-                  </div>
-                  <div class="demo-task">
-                    <span class="demo-task__check demo-task__check--empty"></span>
-                    <span>Reach out to first 10 users</span>
-                  </div>
-                </div>
-              </div>
+            <div class="app-demo__divider"><span class="app-demo__arrow">↓ AI generated tasks</span></div>
+            <div class="app-demo__tasks">
+              <div class="demo-task demo-task--done"><span class="demo-task__check">✓</span><span>Define your target audience</span></div>
+              <div class="demo-task demo-task--done"><span class="demo-task__check">✓</span><span>Build an MVP with core features</span></div>
+              <div class="demo-task demo-task--active"><span class="demo-task__check demo-task__check--active"></span><span>Set up a landing page</span></div>
+              <div class="demo-task"><span class="demo-task__check demo-task__check--empty"></span><span>Launch on Product Hunt</span></div>
+              <div class="demo-task"><span class="demo-task__check demo-task__check--empty"></span><span>Reach out to first 10 users</span></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- More projects grid -->
+  <!-- FEATURE SECTION 2 — LearningUni (reversed) -->
+  <section class="feature feature--reverse" id="learninguni">
+    <div class="container feature__inner">
+      <div class="feature__text reveal">
+        <span class="feature__badge feature__badge--teal">🎓 LearningUni</span>
+        <h3 class="feature__title">AI-powered questions for every learning need.</h3>
+        <p class="feature__desc">One question-generation engine that creates custom questions, quizzes, and structured learning paths — so teachers, parents, and self-learners can build materials 10x faster.</p>
+        <div class="feature__triad">
+          <div class="triad-item">
+            <span class="triad-item__icon">⚡</span>
+            <strong>Generate</strong>
+            <span>Custom questions in seconds, any subject.</span>
+          </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">🎛️</span>
+            <strong>Customize</strong>
+            <span>Tune difficulty and learning style.</span>
+          </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">📊</span>
+            <strong>Track</strong>
+            <span>Build quizzes &amp; follow mastery paths.</span>
+          </div>
+        </div>
+        <a href="https://learninguni.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--glow">Try LearningUni ↗</a>
+      </div>
+
+      <div class="feature__visual reveal">
+        <div class="app-demo">
+          <div class="app-demo__header">
+            <span class="app-demo__logo">LearningUni</span>
+            <span class="app-demo__nav">Question Generator</span>
+          </div>
+          <div class="app-demo__body">
+            <div class="quiz-meta">
+              <span class="quiz-topic">American Civil War</span>
+              <div class="quiz-diff">
+                <span class="quiz-diff__pill">Easy</span>
+                <span class="quiz-diff__pill quiz-diff__pill--active">Medium</span>
+                <span class="quiz-diff__pill">Hard</span>
+              </div>
+            </div>
+            <div class="quiz-question">Which of the following was a major cause of the American Civil War?</div>
+            <div class="quiz-options">
+              <div class="quiz-option"><span class="quiz-option__key">A</span> Disputes over states' rights and slavery</div>
+              <div class="quiz-option quiz-option--correct"><span class="quiz-option__key">B</span> Economic differences between North and South</div>
+              <div class="quiz-option"><span class="quiz-option__key">C</span> Expansion into western territories</div>
+              <div class="quiz-option"><span class="quiz-option__key">D</span> All of the above</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE SECTION 3 — MyOwnTimeline -->
+  <section class="feature" id="timeline">
+    <div class="container feature__inner">
+      <div class="feature__text reveal">
+        <span class="feature__badge feature__badge--orange">🗓️ MyOwnTimeline</span>
+        <h3 class="feature__title">A log, not a to-do list.</h3>
+        <p class="feature__desc">Capture your day as it happens and get an automatic timeline, daily reports, streaks, a focus timer, and AI coaching — synced across every device.</p>
+        <div class="feature__triad">
+          <div class="triad-item">
+            <span class="triad-item__icon">📝</span>
+            <strong>Capture</strong>
+            <span>Log moments as they happen.</span>
+          </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">🧭</span>
+            <strong>Reflect</strong>
+            <span>Auto timelines, reports &amp; streaks.</span>
+          </div>
+          <div class="triad-item">
+            <span class="triad-item__icon">🤝</span>
+            <strong>Improve</strong>
+            <span>AI coaching to build better days.</span>
+          </div>
+        </div>
+        <a href="https://myowntimeline.com" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--glow">Try MyOwnTimeline ↗</a>
+      </div>
+
+      <div class="feature__visual reveal">
+        <div class="app-demo">
+          <div class="app-demo__header">
+            <span class="app-demo__logo">MyOwnTimeline</span>
+            <span class="app-demo__nav">Today</span>
+          </div>
+          <div class="app-demo__body">
+            <div class="timeline-demo">
+              <div class="tl-item tl-item--done"><span class="tl-time">08:10</span><span class="tl-dot"></span><span class="tl-label">Morning focus block — writing</span></div>
+              <div class="tl-item tl-item--done"><span class="tl-time">11:30</span><span class="tl-dot"></span><span class="tl-label">Team sync &amp; planning</span></div>
+              <div class="tl-item tl-item--active"><span class="tl-time">14:00</span><span class="tl-dot"></span><span class="tl-label">Deep work — product design</span></div>
+              <div class="tl-item"><span class="tl-time">18:00</span><span class="tl-dot"></span><span class="tl-label">Evening walk &amp; reflection</span></div>
+            </div>
+            <div class="timeline-summary">
+              <span>🔥 6-day streak</span>
+              <span>⏱️ 4h 20m focused</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORE PRODUCTS -->
+  <section class="featured">
+    <div class="container">
       <p class="section-eyebrow reveal">Built &amp; shipping</p>
-      <h2 class="section-title reveal">More ventures</h2>
+      <h2 class="section-title reveal">More from the studio</h2>
       <div class="projects-grid">
 
         <a href="https://satquestionmastery.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">🎯</span>
-            <span class="project-link">↗</span>
-          </div>
+          <div class="project-card__header"><span class="project-card__icon">🎯</span><span class="project-link">↗</span></div>
           <h3>SATquestionmastery</h3>
           <p>A parent &amp; tutor dashboard for SAT prep — 200+ questions organized by College Board domain, progress tracking, weak-area detection, and custom quizzes with explanations.</p>
-          <div class="project-card__tags">
-            <span class="tag">Education</span><span class="tag">SAT Prep</span><span class="tag">Dashboard</span>
-          </div>
-        </a>
-
-        <a href="https://learninguni.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">🎓</span>
-            <span class="project-link">↗</span>
-          </div>
-          <h3>LearningUni</h3>
-          <p>An AI-powered platform that generates custom questions, quizzes, and structured learning paths — build teaching materials 10x faster for teachers, parents, and self-learners.</p>
-          <div class="project-card__tags">
-            <span class="tag">AI</span><span class="tag">EdTech</span><span class="tag">Quiz Builder</span>
-          </div>
-        </a>
-
-        <a href="https://myowntimeline.com" target="_blank" rel="noopener noreferrer" class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">🗓️</span>
-            <span class="project-link">↗</span>
-          </div>
-          <h3>MyOwnTimeline</h3>
-          <p>A log, not a to-do list. Capture your day as it happens and get an automatic timeline, daily reports, streaks, a focus timer, and AI coaching — synced across devices.</p>
-          <div class="project-card__tags">
-            <span class="tag">Productivity</span><span class="tag">Journaling</span><span class="tag">AI</span>
-          </div>
+          <div class="project-card__tags"><span class="tag">Education</span><span class="tag">SAT Prep</span><span class="tag">Dashboard</span></div>
         </a>
 
         <a href="https://memory-eight-blush.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">📖</span>
-            <span class="project-link">↗</span>
-          </div>
+          <div class="project-card__header"><span class="project-card__icon">📖</span><span class="project-link">↗</span></div>
           <h3>MemoryVerse</h3>
           <p>A Scripture-memorization game. Rebuild verses from shuffled pieces across three difficulty levels, filter by theme, switch Bible versions, and play fully offline.</p>
-          <div class="project-card__tags">
-            <span class="tag">Faith</span><span class="tag">Learning</span><span class="tag">Game</span>
-          </div>
+          <div class="project-card__tags"><span class="tag">Faith</span><span class="tag">Learning</span><span class="tag">Game</span></div>
         </a>
 
         <a href="https://projecteddy-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">🗂️</span>
-            <span class="project-link">↗</span>
-          </div>
+          <div class="project-card__header"><span class="project-card__icon">🗂️</span><span class="project-link">↗</span></div>
           <h3>ProjectEddy</h3>
           <p>Manage the emotional side of dealing with projects. Life has become a multi-project adventure — you don't have to do it alone.</p>
-          <div class="project-card__tags">
-            <span class="tag">Projects</span><span class="tag">Wellbeing</span><span class="tag">Support</span>
-          </div>
+          <div class="project-card__tags"><span class="tag">Projects</span><span class="tag">Wellbeing</span><span class="tag">Support</span></div>
         </a>
 
         <div class="project-card project-card--soon reveal">
-          <div class="project-card__header">
-            <span class="project-card__icon">✨</span>
-            <span class="project-link project-link--soon">soon</span>
-          </div>
+          <div class="project-card__header"><span class="project-card__icon">✨</span><span class="project-link project-link--soon">soon</span></div>
           <h3>hai</h3>
           <p>Something new in the works. Details coming soon — check back shortly.</p>
-          <div class="project-card__tags">
-            <span class="tag">Coming Soon</span>
-          </div>
+          <div class="project-card__tags"><span class="tag">Coming Soon</span></div>
+        </div>
+
+        <div class="project-card project-card--soon reveal">
+          <div class="project-card__header"><span class="project-card__icon">🫧</span><span class="project-link project-link--soon">soon</span></div>
+          <h3>Bubble</h3>
+          <p>Create your bubble online — your own space to gather what matters and share it with the people you choose.</p>
+          <div class="project-card__tags"><span class="tag">Community</span><span class="tag">Personal Space</span></div>
         </div>
 
       </div>
-
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section class="skills" id="skills">
+  <!-- STANDARDS -->
+  <section class="skills" id="about">
     <div class="container">
       <p class="section-eyebrow reveal">How we build</p>
       <h2 class="section-title reveal">Data &amp; privacy standards.</h2>
@@ -301,7 +373,6 @@
           </div>
         </div>
       </div>
-      </div>
     </div>
   </section>
 
@@ -310,26 +381,17 @@
     <div class="container">
       <div class="contact__inner reveal">
         <p class="section-eyebrow">Let's talk</p>
-        <h2 class="section-title">Got a project in mind?<br /><span class="gradient-text">Let's build it.</span></h2>
-        <p class="contact__sub">
-          Have a SaaS idea or product to build? We'd love to hear
-          about it. Let's create something great together.
-        </p>
+        <h2 class="section-title">Got a product in mind?<br /><span class="gradient-text">Let's build it.</span></h2>
+        <p class="contact__sub">Have a SaaS idea or a product to build? We'd love to hear about it. Let's create something great together.</p>
         <div class="contact__options">
           <a href="mailto:flowsimlab@gmail.com" class="contact-card">
             <span class="contact-card__icon">✉️</span>
-            <div>
-              <strong>Email</strong>
-              <span>flowsimlab@gmail.com</span>
-            </div>
+            <div><strong>Email</strong><span>flowsimlab@gmail.com</span></div>
             <span class="contact-card__arrow">→</span>
           </a>
           <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--highlight">
             <span class="contact-card__icon">🤖</span>
-            <div>
-              <strong>Try TodoByAI</strong>
-              <span>todobyai.com</span>
-            </div>
+            <div><strong>Try TodoByAI</strong><span>todobyai.com</span></div>
             <span class="contact-card__arrow">→</span>
           </a>
         </div>
@@ -340,14 +402,35 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer__inner">
-        <span class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></span>
-        <p class="footer__copy" style="display:inline-flex;align-items:center;gap:5px;justify-content:center;">© 2026 <a href="https://flowsimlab.github.io" style="color:inherit;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">flowsimlab <img src="logo.png" alt="flowsimlab" style="width:14px;height:14px;border-radius:50%;vertical-align:middle;" /></a> — Designed with excellence &amp; standards.</p>
-        <div class="footer__links">
-          <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer">TodoByAI</a>
-          <a href="mailto:flowsimlab@gmail.com">Email</a>
-          <a href="mailto:flowsimlab@gmail.com?subject=Hiring%20flowsimlab" style="opacity:0.6;">Hire us</a>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="nav__logo"><img src="logo.png" alt="flowsimlab logo" class="nav__logo-img" /><span>flowsimlab<span class="accent">.</span></span></span>
+          <p class="footer__tagline">A studio building beautiful, intuitive SaaS products — with shared standards and a privacy-first foundation.</p>
         </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <h5>Products</h5>
+            <a href="https://todobyai.com" target="_blank" rel="noopener noreferrer">TodoByAI</a>
+            <a href="https://learninguni.com" target="_blank" rel="noopener noreferrer">LearningUni</a>
+            <a href="https://myowntimeline.com" target="_blank" rel="noopener noreferrer">MyOwnTimeline</a>
+            <a href="https://satquestionmastery.com" target="_blank" rel="noopener noreferrer">SATquestionmastery</a>
+          </div>
+          <div class="footer__col">
+            <h5>Resources</h5>
+            <a href="#work">Work</a>
+            <a href="#about">Standards</a>
+            <a href="mailto:flowsimlab@gmail.com">Contact</a>
+          </div>
+          <div class="footer__col">
+            <h5>Company</h5>
+            <a href="#home">About</a>
+            <a href="mailto:flowsimlab@gmail.com?subject=Hiring%20flowsimlab">Hire us</a>
+            <a href="mailto:flowsimlab@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy" style="display:inline-flex;align-items:center;gap:5px;">© 2026 <a href="https://flowsimlab.github.io" style="color:inherit;text-decoration:none;font-weight:600;display:inline-flex;align-items:center;gap:5px;">flowsimlab <img src="logo.png" alt="flowsimlab" style="width:14px;height:14px;border-radius:50%;vertical-align:middle;" /></a> — Designed with excellence &amp; standards.</p>
       </div>
     </div>
   </footer>
