@@ -855,6 +855,20 @@ a { color: inherit; text-decoration: none; }
 }
 .skill-group:hover { border-color: rgba(141,111,131,0.2); }
 
+.skill-group__head {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 16px;
+}
+.skill-group__icon {
+  width: 20px;
+  height: 20px;
+  color: var(--accent-2);
+  flex-shrink: 0;
+}
+.skill-group__head .skill-group__title { margin-bottom: 0; }
+
 .skill-group__title {
   font-size: 12px;
   font-weight: 700;
@@ -871,6 +885,9 @@ a { color: inherit; text-decoration: none; }
 }
 
 .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-size: 13px;
   font-weight: 500;
   padding: 6px 12px;
@@ -880,6 +897,14 @@ a { color: inherit; text-decoration: none; }
   color: var(--text-muted);
   transition: all 0.2s;
 }
+.chip svg {
+  width: 13px;
+  height: 13px;
+  color: var(--accent);
+  opacity: 0.75;
+  flex-shrink: 0;
+}
+.chip:hover svg { color: var(--accent-2); opacity: 1; }
 .chip:hover {
   background: rgba(141,111,131,0.1);
   border-color: rgba(141,111,131,0.35);
